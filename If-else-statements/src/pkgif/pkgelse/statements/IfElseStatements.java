@@ -200,7 +200,8 @@ public class IfElseStatements {
            System.out.println("You worked for "+hour+" hours making a total of "+total+" ( "+hourAft+" * $"+money+"+ "+extra+" * $"+extraMoney+" = $"+total+")");
        }
        else if(hour < 40){
-           int 
+           int totalSmall = hour*money;
+           System.out.println("You worked for "+hour+" hours making a total of "+totalSmall+" ("+hour+" * $"+money+")");
        }
     }
     
@@ -212,7 +213,7 @@ public class IfElseStatements {
            double total = (hour*money)+(extra*extraMoney);
            System.out.println("You worked for "+hour+" hours making a total of "+total+" ( "+hourAft+" * $"+money+"+ "+extra+" * $"+extraMoney+" = $"+total+")");
        } 
-       else if(hour < 61){
+       else if(hour > 60){
            System.out.println("Please see manager.");
        }
     }
